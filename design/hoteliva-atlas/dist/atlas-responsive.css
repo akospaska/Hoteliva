@@ -1,0 +1,299 @@
+@media (min-width: 1700px) {
+  #content {
+    padding-right: 65px;
+    padding-left: 65px;
+  }
+}
+@media (max-width: 1150px) {
+  #content {
+    padding: 32px 28px;
+  }
+  .atlas-layout {
+    grid-template-columns: 245px minmax(0, 1fr);
+  }
+  .atlas-brand {
+    width: 200px;
+  }
+  .atlas-sidebar {
+    padding: 23px 15px;
+  }
+  .feature-title-row {
+    flex-direction: column;
+  }
+  .chapter-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+  .screen-stage.mobile {
+    gap: 25px;
+    padding: 25px;
+  }
+  .screen-stage.mobile .mockup-image-button {
+    width: 260px;
+  }
+  .mobile-note h3 {
+    font-size: 20px;
+  }
+  .preview-controls {
+    align-items: start;
+  }
+  .control-pair {
+    gap: 6px;
+  }
+  .segmented button {
+    padding: 8px;
+  }
+  .hero-stage {
+    min-height: 300px;
+  }
+  .stage-caption {
+    display: none;
+  }
+  .atlas-facts > div {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+  }
+}
+@media (max-width: 800px) {
+  .atlas-header {
+    height: 73px;
+    padding: 0 20px;
+  }
+  .atlas-brand {
+    width: auto;
+  }
+  .atlas-brand > strong {
+    font-size: 22px;
+  }
+  .atlas-brand > b {
+    width: 34px;
+    height: 34px;
+    font-size: 25px;
+  }
+  .header-middle {
+    display: none;
+  }
+  .header-controls {
+    gap: 10px;
+  }
+  #board-button {
+    font-size: 10px;
+  }
+  #menu-button {
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 8px;
+  }
+  .atlas-layout {
+    display: block;
+  }
+  .atlas-sidebar {
+    display: none;
+    position: fixed;
+    top: 73px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 360px;
+    height: calc(100dvh - 73px);
+    background: var(--canvas);
+    z-index: 15;
+    box-shadow: 30px 0 80px #07180f44;
+  }
+  .menu-open .atlas-sidebar {
+    display: block;
+  }
+  #content {
+    padding: 30px 20px;
+  }
+  .overview-hero h1 {
+    font-size: 48px;
+    letter-spacing: -2.5px;
+  }
+  .hero-kicker {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .hero-copy {
+    font-size: 13px;
+  }
+  .hero-actions {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .hero-stage {
+    padding: 15px 12px 23px;
+    min-height: 220px;
+  }
+  .stage-label {
+    font-size: 7px;
+    margin-bottom: 15px;
+  }
+  .phone-shot {
+    top: 46px;
+    right: 10px;
+    border-width: 3px;
+    border-radius: 12px;
+  }
+  .desktop-shot {
+    width: 89%;
+  }
+  .atlas-facts > div {
+    padding: 0 12px;
+  }
+  .atlas-facts strong {
+    font-size: 28px;
+  }
+  .atlas-facts span {
+    font-size: 9px;
+  }
+  .chapter-section {
+    margin-top: 37px;
+  }
+  .section-heading h2 {
+    font-size: 23px;
+  }
+  .chapter-grid {
+    gap: 10px;
+  }
+  .chapter {
+    padding: 18px;
+  }
+  .chapter h3 {
+    font-size: 19px;
+    margin-top: 24px;
+  }
+  .chapter p {
+    font-size: 10px;
+  }
+  .chapter footer {
+    font-size: 8px;
+    gap: 5px;
+  }
+  .principles > div {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .feature-title-row h1 {
+    font-size: 30px;
+  }
+  .feature-head > p {
+    font-size: 12px;
+  }
+  .feature-breadcrumb {
+    margin-bottom: 22px;
+    font-size: 9px;
+  }
+  .tabs {
+    gap: 22px;
+  }
+  .tabs button {
+    font-size: 11px;
+  }
+  .feature-counter {
+    font-size: 9px;
+  }
+  .preview-controls {
+    flex-wrap: wrap;
+  }
+  .control-pair {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .segmented button {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+  .preview-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .screen-stage {
+    padding: 10px;
+    min-height: 0;
+    border-radius: 8px;
+  }
+  .screen-stage.mobile {
+    padding: 22px;
+  }
+  .screen-stage.mobile .mockup-image-button {
+    width: min(310px, 100%);
+    max-height: 630px;
+    border-radius: 24px;
+  }
+  .mobile-note {
+    display: none;
+  }
+  .preview-caption {
+    font-size: 8px;
+  }
+  .comparison {
+    gap: 10px;
+  }
+  .comparison > button {
+    padding: 10px;
+    height: 230px;
+  }
+  .comparison > button > span {
+    font-size: 8px;
+  }
+  .comparison img.mobile {
+    width: 105px;
+  }
+  .flow-summary p {
+    gap: 10px;
+    font-size: 11px;
+  }
+  .pager strong {
+    font-size: 11px;
+  }
+  .flow-intro h2 {
+    font-size: 27px;
+  }
+  .flow-steps li {
+    gap: 16px;
+  }
+  .flow-steps h3 {
+    font-size: 17px;
+  }
+  .flow-steps p {
+    font-size: 12px;
+  }
+  .scenario {
+    padding: 20px;
+  }
+  .scenario > div {
+    padding-right: 0;
+  }
+  .scenario > div > span {
+    position: static;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .requirements li {
+    gap: 15px;
+  }
+  .requirements li > p {
+    font-size: 12px;
+  }
+  dialog {
+    padding: 12px;
+  }
+  .dialog-bar strong {
+    font-size: 11px;
+  }
+  .dialog-bar button {
+    font-size: 10px;
+    padding: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

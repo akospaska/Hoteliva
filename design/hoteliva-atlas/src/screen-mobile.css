@@ -1,0 +1,272 @@
+@media (max-width: 700px) {
+  .app-shell .app-sidebar,
+  .app-shell .topbar,
+  .app-shell .top-primary {
+    display: none;
+  }
+  .app-shell .app-main {
+    margin-left: 0;
+  }
+  .app-shell main {
+    padding: 25px 20px 95px;
+  }
+  .app-shell .mobile-top {
+    height: 72px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    background: var(--panel);
+  }
+  .app-shell .brand {
+    font-size: 22px;
+  }
+  .app-shell .brand b {
+    height: 32px;
+    width: 32px;
+    font-size: 23px;
+  }
+  .app-shell h1 {
+    font-size: 29px;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+  .app-shell .eyebrow {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+  .app-shell .page-heading {
+    margin-bottom: 25px;
+  }
+  .app-shell .page-heading p {
+    font-size: 12px;
+    line-height: 1.65;
+  }
+  .app-shell .metrics {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .app-shell .metric {
+    padding: 15px;
+  }
+  .app-shell .metric > strong {
+    font-size: 32px;
+    margin: 13px 0;
+  }
+  .app-shell .metric small {
+    font-size: 8px;
+  }
+  .app-shell .columns,
+  .app-shell .translation-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .app-shell .panel {
+    padding: 18px;
+    margin-bottom: 16px;
+  }
+  .app-shell .room-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 9px;
+  }
+  .app-shell .room-tile {
+    padding: 13px 10px 10px;
+  }
+  .app-shell .room-tile > span {
+    font-size: 22px;
+  }
+  .app-shell .room-tile footer {
+    font-size: 8px;
+  }
+  .app-shell .filters {
+    gap: 6px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+  }
+  .app-shell .filter {
+    padding: 8px 10px;
+    font-size: 9px;
+  }
+  .app-shell .work-row {
+    gap: 9px;
+    flex-wrap: wrap;
+  }
+  .app-shell .row-copy {
+    min-width: 155px;
+  }
+  .app-shell .row-icon {
+    width: 29px;
+    height: 29px;
+  }
+  .app-shell .row-arrow {
+    display: none;
+  }
+  .app-shell .row-copy strong {
+    font-size: 12px;
+  }
+  .app-shell .row-copy small {
+    font-size: 10px;
+  }
+  .app-shell .pill {
+    font-size: 8px;
+    padding: 5px 6px;
+  }
+  .app-shell .room-hero {
+    padding: 23px 20px;
+  }
+  .app-shell .room-hero h2 {
+    font-size: 54px;
+  }
+  .app-shell .room-hero h2 span {
+    display: block;
+    margin: 4px 0 0;
+    font-size: 20px;
+  }
+  .app-shell .room-hero p {
+    font-size: 10px;
+  }
+  .app-shell .room-symbol {
+    width: 75px;
+    height: 105px;
+  }
+  .app-shell .quick-actions {
+    gap: 8px;
+  }
+  .app-shell .quick-actions > div {
+    padding: 14px 9px;
+  }
+  .app-shell .quick-actions strong {
+    font-size: 11px;
+  }
+  .app-shell .quick-actions small {
+    font-size: 8px;
+  }
+  .app-shell .quick-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .app-shell .quick-option {
+    padding: 17px;
+  }
+  .app-shell .quick-option strong {
+    font-size: 12px;
+  }
+  .app-shell .quick-option small {
+    font-size: 9px;
+    line-height: 1.6;
+  }
+  .app-shell .summary-strip {
+    padding: 20px;
+    gap: 12px;
+  }
+  .app-shell .summary-strip h2 {
+    font-size: 22px;
+  }
+  .app-shell .summary-strip p {
+    font-size: 10px;
+  }
+  .app-shell .ring {
+    width: 63px;
+    height: 63px;
+    font-size: 13px;
+  }
+  .app-shell .check-row {
+    gap: 12px;
+    padding: 21px 0;
+  }
+  .app-shell .check-row strong {
+    font-size: 12px;
+  }
+  .app-shell .check-row small {
+    font-size: 10px;
+  }
+  .app-shell .done-time {
+    display: none;
+  }
+  .app-shell .stepper {
+    gap: 12px;
+    margin-left: auto;
+  }
+  .app-shell .stepper span {
+    width: 32px;
+    height: 32px;
+  }
+  .app-shell .product-icon {
+    width: 30px;
+    height: 38px;
+  }
+  .app-shell .steps {
+    gap: 13px;
+    font-size: 10px;
+  }
+  .app-shell .translation-text {
+    font-size: 19px;
+    padding: 15px 0 30px;
+  }
+  .app-shell .translation-grid footer {
+    font-size: 10px;
+  }
+  .app-shell .message > div:last-child {
+    max-width: calc(100% - 47px);
+  }
+  .app-shell .message p {
+    padding: 13px;
+    font-size: 12px;
+  }
+  .app-shell .compose {
+    font-size: 10px;
+  }
+  .app-shell .knowledge-hero {
+    padding: 23px;
+  }
+  .app-shell .knowledge-hero h2 {
+    font-size: 27px;
+  }
+  .app-shell .bed-art {
+    display: none;
+  }
+  .app-shell .note {
+    padding: 14px;
+    font-size: 10px;
+  }
+  .app-shell .mock-label {
+    font-size: 7px;
+    line-height: 1.5;
+  }
+  .app-shell .mock-label span {
+    max-width: 180px;
+    text-align: right;
+  }
+  .app-shell .mobile-action {
+    display: block;
+    margin: 20px 0;
+  }
+  .app-shell .mobile-action .primary {
+    padding: 16px;
+    font-size: 12px;
+  }
+  .app-shell .mobile-nav {
+    position: fixed;
+    inset: auto 0 0;
+    background: var(--panel);
+    border-top: 1px solid var(--line);
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+  }
+  .app-shell .mobile-nav > span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 8px;
+  }
+  .app-shell .mobile-nav .scan {
+    color: var(--green);
+    font-weight: bold;
+  }
+}

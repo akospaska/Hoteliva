@@ -1,0 +1,21 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+dist-android/
+.expo/
+coverage/
+playwright-report/
+test-results/
+*.tsbuildinfo
+*.log
+apps/client/android/
+apps/client/ios/
+.terraform/
+*.tfstate*
+*.tfplan
+design/*.tar.gz
+design/hoteliva-atlas/.openai/
+# Keep the approved, standalone design reference; application builds remain ignored.
+!design/hoteliva-atlas/dist/

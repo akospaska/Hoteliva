@@ -1,0 +1,14 @@
+node_modules/
+.git/
+.expo/
+dist/
+dist-android/
+coverage/
+test-results/
+playwright-report/
+apps/client/android/
+apps/client/ios/
+package-lock.json
+expo-env.d.ts
+.env
+.env.*

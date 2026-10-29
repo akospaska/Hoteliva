@@ -1,0 +1,33 @@
+{
+  "name": "hoteliva",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "dev": "concurrently -n api,client -c green,blue \"npm run dev -w @hoteliva/server\" \"npm run web -w @hoteliva/client\"",
+    "dev:worker": "npm run dev:worker -w @hoteliva/server",
+    "typecheck": "npm run typecheck --workspaces",
+    "check:rules": "node --test scripts/facade-comments.test.mjs && node scripts/check-rules.mjs",
+    "test": "npm run test -w @hoteliva/server",
+    "build": "npm run build -w @hoteliva/server && npm run build:web -w @hoteliva/client",
+    "check": "npm run format:check && npm run check:rules && npm run typecheck && npm run lint && npm test",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "npm run lint -w @hoteliva/client",
+    "test:browser": "playwright test",
+    "icons": "node scripts/render-icons.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@resvg/resvg-js": "2.6.2",
+    "@typescript-eslint/parser": "8.72.1",
+    "concurrently": "10.0.6",
+    "prettier": "3.9.10",
+    "typescript": "6.0.3"
+  }
+}

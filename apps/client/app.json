@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Hoteliva",
+    "slug": "hoteliva",
+    "version": "0.1.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.hoteliva.app",
+      "predictiveBackGestureEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/icon.png",
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-font",
+      "expo-sharing",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "A Hoteliva a szobák és ellenőrzőpontok QR-kódjainak beolvasásához használja a kamerát.",
+          "recordAudioAndroid": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Fotók csatolása a hotel munkafeladataihoz.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "scheme": "hoteliva"
+  }
+}

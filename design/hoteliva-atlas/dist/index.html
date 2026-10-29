@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Hoteliva termék- és designatlasz: 30 funkció, 120 világos és sötét desktop- és mobilképernyőterv, részletes működési leírásokkal."
+    />
+    <meta name="theme-color" content="#173e32" />
+    <title>Hoteliva · Design atlasz</title>
+    <link rel="stylesheet" href="atlas.css" />
+    <link rel="stylesheet" href="atlas-responsive.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Ugrás a tartalomra</a>
+    <header class="atlas-header">
+      <a class="atlas-brand" href="#overview" aria-label="Hoteliva, áttekintés"
+        ><b>h.</b><strong>hoteliva<span>DESIGN ATLASZ</span></strong></a
+      >
+      <div class="header-middle"><span class="live-dot"></span>Termékterv · 2026. október</div>
+      <div class="header-controls">
+        <button id="board-button">Vizuális irány ↗</button
+        ><button id="atlas-theme" aria-label="A bemutató témájának váltása">◐</button
+        ><button id="menu-button" aria-expanded="false" aria-controls="navigation">Menü</button>
+      </div>
+    </header>
+    <div class="atlas-layout">
+      <aside id="navigation" class="atlas-sidebar">
+        <a class="overview-link" href="#overview">◇ <span>A teljes kép</span><span>↗</span></a>
+        <label class="search-label" for="feature-search">Funkció keresése</label>
+        <div class="search-box">
+          <span>⌕</span
+          ><input
+            id="feature-search"
+            type="search"
+            placeholder="Szoba, QR, minibár…"
+            autocomplete="off"
+          />
+        </div>
+        <div class="scope-filter" role="group" aria-label="Funkciók szűrése">
+          <button data-scope="all" aria-pressed="true">Mind a 30</button
+          ><button data-scope="mvp" aria-pressed="false">MVP</button
+          ><button data-scope="later" aria-pressed="false">Továbbiak</button>
+        </div>
+        <nav id="feature-nav" aria-label="Funkciójegyzék"></nav>
+        <div class="sidebar-footer">
+          <span>01 / TERMÉKKONCEPCIÓ</span>
+          <p>Ugyanaz a működés.<br />Négy vizuális nézőpont.</p>
+        </div>
+      </aside>
+      <main id="content" tabindex="-1"></main>
+    </div>
+    <dialog id="lightbox">
+      <div class="dialog-bar">
+        <strong id="dialog-title">Látványterv</strong
+        ><button id="close-dialog" aria-label="Nagyított kép bezárása">Bezárás ×</button>
+      </div>
+      <div class="dialog-image"><img id="dialog-img" alt="" /></div>
+      <a id="dialog-download" download>Kép letöltése ↓</a>
+    </dialog>
+    <script src="data.js"></script>
+    <script src="specs.js"></script>
+    <script src="atlas.js"></script>
+  </body>
+</html>

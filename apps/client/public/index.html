@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#183B35" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <title>Hoteliva</title>
+    <style>
+      html,
+      body,
+      #root {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        overflow: hidden;
+      }
+      #root {
+        display: flex;
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript
+      >A Hoteliva használatához engedélyezd a JavaScriptet. / Enable JavaScript to use
+      Hoteliva.</noscript
+    >
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator && !['localhost', '127.0.0.1'].includes(location.hostname)) {
+        window.addEventListener('load', () =>
+          navigator.serviceWorker.register('/sw.js').catch(() => {}),
+        );
+      }
+    </script>
+  </body>
+</html>
